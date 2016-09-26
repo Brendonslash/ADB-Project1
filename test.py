@@ -1,0 +1,3 @@
+import json
+json_data=json.loads([<py_bing_search.py_bing_search.WebResult object at 0x7f40fe980ad0>, <py_=bing_search.py_bing_search.WebResult object at 0x7f40fe980bd0>, <py_bing_search.py_bing_search.WebResult object at 0x7f41011b3990>, <py_bing_search.py_bing_search.WebResult object at 0x7f40fe62b750>, <py_bing_search.py_bing_search.WebResult object at 0x7f40fe642a10>, <py_bing_search.py_bing_search.WebResult object at 0x7f40fe642850>, <py_bing_search.py_bing_search.WebResult object at 0x7f40fe642a90>, <py_bing_search.py_bing_search.WebResult object at 0x7f40fe642b10>, <py_bing_search.py_bing_search.WebResult object at 0x7f40fe642b90>, <py_bing_search.py_bing_search.WebResult object at 0x7f40fe642c10>])
+print json_data

@@ -1,0 +1,847 @@
+
+=====================================
+ROUND 1
+QUERY milky
+
+Result 1
+Relevant: NO
+[
+ URL: http://www.animenewsnetwork.com/encyclopedia/company.php?id=1979
+ Title: Milky - Anime News Network
+ Summary: News chronological archives; 04:00 Force of Will Anime Film's 1st Trailer Previews Cthulu-based Short 'L.S' 03:00 Ensemble Stars! Gets Sequel Stage Play in January
+]
+
+
+Result 2
+Relevant: YES
+[
+ URL: http://www.thefreedictionary.com/milky
+ Title: Milky - definition of milky by The Free Dictionary
+ Summary: milk?y (m?l?k?) adj. milk?i?er, milk?i?est. 1. Resembling milk in color or consistency: milky glass. 2. Filled with, consisting of, or yielding milk or a ...
+]
+
+
+Result 3
+Relevant: NO
+[
+ URL: http://www.theybf.com/2013/05/03/got-milk-tia-tamera-mowry-launch-milky-for-breast-feeding-mothers-tamar-braxton-chudney
+ Title: GOT MILK? Tia & Tamera Mowry LAUNCH "Milky!" For BREAST ...
+ Summary: Extra fab actresses and new mothers, Tia and Tamera Mowry launched their new product line "Milky!" yesterday with expectant mom Tamar Braxton amongst the women in ...
+]
+
+
+Result 4
+Relevant: YES
+[
+ URL: https://en.wikipedia.org/wiki/Milky_Way
+ Title: Milky Way - Wikipedia, the free encyclopedia
+ Summary: The Milky Way is the galaxy that contains our Solar System. Its name "milky" is derived from its appearance as a dim glowing band arching across the night sky whose ...
+]
+
+
+Result 5
+Relevant: NO
+[
+ URL: https://en.wikipedia.org/wiki/Milky
+ Title: Milky - Wikipedia, the free encyclopedia
+ Summary: Milky is a dance production group based in Italy. The act consists of producers Giordano Trivellato and Giuliano Sacchetto, with Italian people singer Giuditta ...
+]
+
+
+Result 6
+Relevant: NO
+[
+ URL: http://www.thesaurus.com/browse/milky
+ Title: Milky Synonyms, Milky Antonyms | Thesaurus.com
+ Summary: Synonyms for milky at Thesaurus.com with free online thesaurus, antonyms, and definitions. Dictionary and Word of the Day.
+]
+
+
+Result 7
+Relevant: NO
+[
+ URL: http://www.merriam-webster.com/dictionary/milky
+ Title: Milky | Definition of Milky by Merriam-Webster
+ Summary: Seen and Heard. What made you want to look up milky? Please tell us where you read or heard it (including the quote, if possible).
+]
+
+
+Result 8
+Relevant: NO
+[
+ URL: http://www.youtube.com/watch?v=Hx6WuGfOV0Q
+ Title: Milky - Just The Way You Are - YouTube
+ Summary: Milky - Just The Way You Are - Duration: 3:34. Chase Gran 91,560 views. 3:34 The Similou - All This Love - Duration: 3:16. motivo 135,838 views.
+]
+
+
+Result 9
+Relevant: YES
+[
+ URL: http://www.space.com/19915-milky-way-galaxy.html
+ Title: Milky Way Galaxy: Facts About Our Galactic Home
+ Summary: The Milky Way is a barred spiral galaxy, about a hundred light-years across. We live on one of its minor spurs, the Orion Arm.
+]
+
+
+Result 10
+Relevant: NO
+[
+ URL: http://www.youtube.com/user/MilkysMusic
+ Title: Milky Chance Official - YouTube
+ Summary: You never know who you're going to meet on the first day of school. Sometimes, you can end up being introduced to one of the best friends you'll ever know. T...
+]
+
+PRECISION 0.3
+=====================================
+ROUND 2
+QUERY milky galaxy way
+
+Result 1
+Relevant: YES
+[
+ URL: https://en.wikipedia.org/wiki/Milky_Way
+ Title: Milky Way - Wikipedia, the free encyclopedia
+ Summary: The Milky Way is the galaxy that contains our Solar System. Its name "milky" is derived from its appearance as a dim glowing band arching across the night ...
+]
+
+
+Result 2
+Relevant: YES
+[
+ URL: http://www.nasa.gov/mission_pages/GLAST/science/milky_way_galaxy.html
+ Title: NASA - Milky Way Galaxy
+ Summary: Milky Way Galaxy. Not counting transient events such as gamma-ray bursts, the brightest object in the gamma-ray sky is the plane of our Milky Way Galaxy.
+]
+
+
+Result 3
+Relevant: YES
+[
+ URL: http://www.latimes.com/science/sciencenow/la-sci-sn-gaia-milky-way-billion-20160915-snap-story.html
+ Title: Oh, hey, Milky Way: Gaia reveals map of more than 1 ...
+ Summary: The Milky Way just got a little more crowded. The European Space Agency?s Gaia spacecraft has mapped more than a billion stars in the galaxy with unprecedented ...
+]
+
+
+Result 4
+Relevant: YES
+[
+ URL: http://www.atlasoftheuniverse.com/galaxy.html
+ Title: The Universe within 50000 Light Years - The Milky Way Galaxy
+ Summary: Here is another map of the Milky Way viewed from above. This page also explains what scientific data there is for the spiral structure of our galaxy.
+]
+
+
+Result 5
+Relevant: YES
+[
+ URL: http://science.nasa.gov/astrophysics/focus-areas/what-are-galaxies/
+ Title: Galaxies - NASA Science
+ Summary: Galaxies Artist's Conception - The Milky Way Where are we? We live in a somewhat remote arm of the Milky Way. This video shows you the way from our home to a vantage ...
+]
+
+
+Result 6
+Relevant: YES
+[
+ URL: https://simple.wikipedia.org/wiki/Milky_Way_Galaxy
+ Title: Milky Way - Simple English Wikipedia, the free encyclopedia
+ Summary: The Milky Way is our home galaxy. It contains over 200 billion stars, including our Sun. The Milky Way has a diameter of 100,000 light years, and is a barred spiral ...
+]
+
+
+Result 7
+Relevant: YES
+[
+ URL: http://www.skyandtelescope.com/astronomy-news/giant-dwarf-galaxy-neighbors-milky-way/
+ Title: Milky Way's New Neighbor: A Giant Dwarf Galaxy - Sky ...
+ Summary: Astronomers have discovered a ?feeble giant?: one of the largest dwarf galaxies ever seen around the Milky Way.
+]
+
+
+Result 8
+Relevant: YES
+[
+ URL: https://www.esa.int/esaKIDSen/SEM536WJD1E_OurUniverse_0.html
+ Title: ESA - Space for Kids - Our Universe - The Milky Way
+ Summary: The Milky Way is shaped like a huge whirlpool that rotates once every 200 million years. It is made up of at least 100 billion stars, as well as dust and gas.
+]
+
+
+Result 9
+Relevant: YES
+[
+ URL: https://www.britannica.com/place/Milky-Way-Galaxy
+ Title: Milky Way Galaxy | astronomy | Britannica.com
+ Summary: Milky Way Galaxy, large spiral system consisting of several billion stars, one of which is the Sun. It takes its name from the Milky Way, the irregular luminous band ...
+]
+
+
+Result 10
+Relevant: YES
+[
+ URL: http://www.nasa.gov/mission_pages/sunearth/news/gallery/galaxy-location.html
+ Title: Milky Way and Our Location | NASA
+ Summary: Graphic view of our Milky Way Galaxy. The Milky Way Galaxy is organized into spiral arms of giant stars that illuminate interstellar gas and dust.
+]
+
+PRECISION 1.0
+=====================================
+ROUND 1
+QUERY milky
+
+Result 1
+Relevant: NO
+[
+ URL: http://www.animenewsnetwork.com/encyclopedia/company.php?id=1979
+ Title: Milky - Anime News Network
+ Summary: From friendly tests of skill and prowess to no-holds-barred death matches, here are just seven of anime's most memorable battle tournament arcs.
+]
+
+
+Result 2
+Relevant: NO
+[
+ URL: http://www.thefreedictionary.com/milky
+ Title: Milky - definition of milky by The Free Dictionary
+ Summary: milk?y (m?l?k?) adj. milk?i?er, milk?i?est. 1. Resembling milk in color or consistency: milky glass. 2. Filled with, consisting of, or yielding milk or a ...
+]
+
+
+Result 3
+Relevant: NO
+[
+ URL: http://www.theybf.com/2013/05/03/got-milk-tia-tamera-mowry-launch-milky-for-breast-feeding-mothers-tamar-braxton-chudney
+ Title: GOT MILK? Tia & Tamera Mowry LAUNCH "Milky!" For BREAST ...
+ Summary: Extra fab actresses and new mothers, Tia and Tamera Mowry launched their new product line "Milky!" yesterday with expectant mom Tamar Braxton amongst the ...
+]
+
+
+Result 4
+Relevant: YES
+[
+ URL: https://en.wikipedia.org/wiki/Milky_Way
+ Title: Milky Way - Wikipedia, the free encyclopedia
+ Summary: The Milky Way is the galaxy that contains our Solar System. Its name "milky" is derived from its appearance as a dim glowing band arching across the night sky whose ...
+]
+
+
+Result 5
+Relevant: NO
+[
+ URL: https://en.wikipedia.org/wiki/Milky
+ Title: Milky - Wikipedia, the free encyclopedia
+ Summary: Milky is a dance production group based in Italy. The act consists of producers Giordano Trivellato and Giuliano Sacchetto, with Italian people singer Giuditta ...
+]
+
+
+Result 6
+Relevant: NO
+[
+ URL: http://www.merriam-webster.com/dictionary/milky
+ Title: Milky | Definition of Milky by Merriam-Webster
+ Summary: Seen and Heard. What made you want to look up milky? Please tell us where you read or heard it (including the quote, if possible).
+]
+
+
+Result 7
+Relevant: NO
+[
+ URL: http://www.thesaurus.com/browse/milky
+ Title: Milky Synonyms, Milky Antonyms | Thesaurus.com
+ Summary: Synonyms for milky at Thesaurus.com with free online thesaurus, antonyms, and definitions. Dictionary and Word of the Day.
+]
+
+
+Result 8
+Relevant: NO
+[
+ URL: http://www.youtube.com/watch?v=Hx6WuGfOV0Q
+ Title: Milky - Just The Way You Are - YouTube
+ Summary: Milky - Just The Way You Are Motivo Records. Subscribe Subscribed Unsubscribe 10,355 10K. ... Milky - In My Mind - Duration: 3:19. willpiter 622,701 views.
+]
+
+
+Result 9
+Relevant: YES
+[
+ URL: http://www.space.com/19915-milky-way-galaxy.html
+ Title: Milky Way Galaxy: Facts About Our Galactic Home
+ Summary: The Milky Way is a barred spiral galaxy, about a hundred light-years across. We live on one of its minor spurs, the Orion Arm.
+]
+
+
+Result 10
+Relevant: NO
+[
+ URL: http://www.youtube.com/user/MilkysMusic
+ Title: Milky Chance Official - YouTube
+ Summary: You never know who you're going to meet on the first day of school. Sometimes, you can end up being introduced to one of the best friends you'll ever know. T...
+]
+
+PRECISION 0.2
+=====================================
+ROUND 2
+QUERY milky galaxy way
+
+Result 1
+Relevant: YES
+[
+ URL: https://en.wikipedia.org/wiki/Milky_Way
+ Title: Milky Way - Wikipedia, the free encyclopedia
+ Summary: The Milky Way is the galaxy that contains our Solar System. Its name "milky" is derived from its appearance as a dim glowing band arching across the night sky whose ...
+]
+
+
+Result 2
+Relevant: YES
+[
+ URL: http://www.nasa.gov/mission_pages/GLAST/science/milky_way_galaxy.html
+ Title: NASA - Milky Way Galaxy
+ Summary: Milky Way Galaxy. Not counting transient events such as gamma-ray bursts, the brightest object in the gamma-ray sky is the plane of our Milky Way Galaxy.
+]
+
+
+Result 3
+Relevant: YES
+[
+ URL: http://www.space.com/19915-milky-way-galaxy.html
+ Title: Milky Way Galaxy: Facts About Our Galactic Home
+ Summary: The Milky Way is a barred spiral galaxy, about a hundred light-years across. We live on one of its minor spurs, the Orion Arm.
+]
+
+
+Result 4
+Relevant: YES
+[
+ URL: http://www.atlasoftheuniverse.com/galaxy.html
+ Title: The Universe within 50000 Light Years - The Milky Way Galaxy
+ Summary: Here is another map of the Milky Way viewed from above. This page also explains what scientific data there is for the spiral structure of our galaxy.
+]
+
+
+Result 5
+Relevant: YES
+[
+ URL: http://time.com/4494202/milky-way-galaxy-map/
+ Title: Milky Way Galaxy: Gaia Satellite Maps Over a Billion Stars
+ Summary: ESA/Gaia/DPAC An all-sky view of stars in our Galaxy ? the Milky Way ? and neighboring galaxies, based on the first year of observations from ESA?s Gaia ...
+]
+
+
+Result 6
+Relevant: YES
+[
+ URL: http://science.nasa.gov/astrophysics/focus-areas/what-are-galaxies/
+ Title: Galaxies - NASA Science
+ Summary: Galaxies Artist's Conception - The Milky Way Where are we? We live in a somewhat remote arm of the Milky Way. This video shows you the way from our home to a vantage ...
+]
+
+
+Result 7
+Relevant: YES
+[
+ URL: http://www.businessinsider.com/what-milky-way-galaxy-looks-like-2016-9
+ Title: Here's what the Milky Way may look like from deep space ...
+ Summary: A close-up view of a simulated Milky Way galaxy, generated from the birth of the universe all the way to the present. Hopkins Research Group/Caltech
+]
+
+
+Result 8
+Relevant: YES
+[
+ URL: https://www.esa.int/esaKIDSen/SEM536WJD1E_OurUniverse_0.html
+ Title: ESA - Space for Kids - Our Universe - The Milky Way
+ Summary: The Milky Way is shaped like a huge whirlpool that rotates once every 200 million years. It is made up of at least 100 billion stars, as well as dust and gas.
+]
+
+
+Result 9
+Relevant: YES
+[
+ URL: http://www.latimes.com/science/sciencenow/la-sci-sn-gaia-milky-way-billion-20160915-snap-story.html
+ Title: Oh, hey, Milky Way: Gaia reveals map of more than 1 ...
+ Summary: The Milky Way just got a little more crowded. The European Space Agency?s Gaia spacecraft has mapped more than a billion stars in the galaxy with unprecedented ...
+]
+
+
+Result 10
+Relevant: YES
+[
+ URL: http://www.nasa.gov/mission_pages/sunearth/news/gallery/galaxy-location.html
+ Title: Milky Way and Our Location | NASA
+ Summary: Graphic view of our Milky Way Galaxy. The Milky Way Galaxy is organized into spiral arms of giant stars that illuminate interstellar gas and dust.
+]
+
+PRECISION 1.0
+=====================================
+ROUND 1
+QUERY death
+
+Result 1
+Relevant: NO
+[
+ URL: https://en.wikipedia.org/wiki/Death
+ Title: Death - Wikipedia, the free encyclopedia
+ Summary: Death is the termination of all biological functions that sustain an organism. Phenomena which commonly bring about death include biological aging , predation ...
+]
+
+
+Result 2
+Relevant: NO
+[
+ URL: http://www.truthaboutdeath.com/
+ Title: What Happens When You Die? | Truth About Death
+ Summary: Death may be the most misunderstood subject in the world today. What happens when you die? Find the truth about death and uncover the deadly deceptions.
+]
+
+
+Result 3
+Relevant: NO
+[
+ URL: http://www.goodreads.com/quotes/tag/death
+ Title: Quotes About Death (9487 quotes)
+ Summary: 9487 quotes have been tagged as death: Woody Allen: ?I'm not afraid of death; I just don't want to be there when it happens.?, J.K. Rowling: ?To the well...
+]
+
+
+Result 4
+Relevant: NO
+[
+ URL: http://deathclock.com/
+ Title: The Death Clock - When Am I Going To Die?
+ Summary: Welcome to the Death Clock(TM), the Internet's friendly reminder that life is slipping away... second by second. Like the hourglass of the Net, the Death Clock will ...
+]
+
+
+Result 5
+Relevant: NO
+[
+ URL: http://www.truthaboutdeath.com/blog/id/1590/the-mystery-of-death
+ Title: The Mystery of Death | Truth About Death
+ Summary: Any study of the nature of death begs an important foundational question: Why must things die in the first place? Indeed, death is a grand mystery.
+]
+
+
+Result 6
+Relevant: NO
+[
+ URL: https://www.facebook.com/DeathOfficial
+ Title: Death (Official) | Facebook
+ Summary: Death (Official). 933,536 likes ? 9,165 talking about this. 'Scream Bloody Gore' Deluxe Reissue Available now on 2CD/LP/DLX 3CD/DLX 2xLPBoxset/CS/Digi...
+]
+
+
+Result 7
+Relevant: NO
+[
+ URL: http://www.dictionary.com/browse/death
+ Title: Death | Define Death at Dictionary.com
+ Summary: Death definition, the act of dying; the end of life; the total and permanent cessation of all the vital functions of an organism. See more.
+]
+
+
+Result 8
+Relevant: NO
+[
+ URL: http://www.huffingtonpost.com/news/death/
+ Title: Death : Pictures, Videos, Breaking News - The Huffington Post
+ Summary: Big News on Death. Includes blogs, news, and community conversations about Death.
+]
+
+
+Result 9
+Relevant: NO
+[
+ URL: http://medical-dictionary.thefreedictionary.com/Death
+ Title: Death | definition of death by Medical dictionary
+ Summary: Death Definition. Death is defined as the cessation of all vital functions of the body including the heartbeat, brain activity (including the brain stem), and breathing.
+]
+
+
+Result 10
+Relevant: NO
+[
+ URL: http://plato.stanford.edu/entries/death/
+ Title: Death (Stanford Encyclopedia of Philosophy)
+ Summary: 1. Death. Death is life?s ending. To clarify death further, we will need to say a bit about the nature of life, and ask whether life can be suspended or restored ...
+]
+
+PRECISION 0.0
+=====================================
+ROUND 1
+QUERY death
+
+Result 1
+Relevant: NO
+[
+ URL: https://en.wikipedia.org/wiki/Death
+ Title: Death - Wikipedia, the free encyclopedia
+ Summary: Death is the termination of all biological functions that sustain an organism. Phenomena which commonly bring about death include biological aging , predation ...
+]
+
+
+Result 2
+Relevant: NO
+[
+ URL: http://www.truthaboutdeath.com/
+ Title: What Happens When You Die? | Truth About Death
+ Summary: Death may be the most misunderstood subject in the world today. What happens when you die? Find the truth about death and uncover the deadly deceptions.
+]
+
+
+Result 3
+Relevant: NO
+[
+ URL: http://www.goodreads.com/quotes/tag/death
+ Title: Quotes About Death (9487 quotes)
+ Summary: 9487 quotes have been tagged as death: Woody Allen: ?I'm not afraid of death; I just don't want to be there when it happens.?, J.K. Rowling: ?To the well...
+]
+
+
+Result 4
+Relevant: NO
+[
+ URL: http://deathclock.com/
+ Title: The Death Clock - When Am I Going To Die?
+ Summary: Welcome to the Death Clock(TM), the Internet's friendly reminder that life is slipping away... second by second. Like the hourglass of the Net, the Death Clock will ...
+]
+
+
+Result 5
+Relevant: NO
+[
+ URL: http://www.truthaboutdeath.com/blog/id/1590/the-mystery-of-death
+ Title: The Mystery of Death | Truth About Death
+ Summary: Any study of the nature of death begs an important foundational question: Why must things die in the first place? Indeed, death is a grand mystery.
+]
+
+
+Result 6
+Relevant: NO
+[
+ URL: https://www.facebook.com/DeathOfficial
+ Title: Death (Official) | Facebook
+ Summary: Death (Official). 933,536 likes ? 9,165 talking about this. 'Scream Bloody Gore' Deluxe Reissue Available now on 2CD/LP/DLX 3CD/DLX 2xLPBoxset/CS/Digi...
+]
+
+
+Result 7
+Relevant: NO
+[
+ URL: http://www.dictionary.com/browse/death
+ Title: Death | Define Death at Dictionary.com
+ Summary: Death definition, the act of dying; the end of life; the total and permanent cessation of all the vital functions of an organism. See more.
+]
+
+
+Result 8
+Relevant: NO
+[
+ URL: http://www.huffingtonpost.com/news/death/
+ Title: Death : Pictures, Videos, Breaking News - The Huffington Post
+ Summary: Big News on Death. Includes blogs, news, and community conversations about Death.
+]
+
+
+Result 9
+Relevant: NO
+[
+ URL: http://medical-dictionary.thefreedictionary.com/Death
+ Title: Death | definition of death by Medical dictionary
+ Summary: Death Definition. Death is defined as the cessation of all vital functions of the body including the heartbeat, brain activity (including the brain stem), and breathing.
+]
+
+
+Result 10
+Relevant: NO
+[
+ URL: http://plato.stanford.edu/entries/death/
+ Title: Death (Stanford Encyclopedia of Philosophy)
+ Summary: 1. Death. Death is life?s ending. To clarify death further, we will need to say a bit about the nature of life, and ask whether life can be suspended or restored ...
+]
+
+PRECISION 0.0
+=====================================
+ROUND 1
+QUERY ryuk
+
+Result 1
+Relevant: YES
+[
+ URL: http://deathnote.wikia.com/wiki/Ryuk
+ Title: Ryuk - Death Note Wiki - Wikia
+ Summary: Ryuk (????, Ry?ku) is a Shinigami who indirectly gives Light Yagami a Death Note. Ryuk was bored with the activities (or lack thereof) of the Shinigami Realm.
+]
+
+
+Result 2
+Relevant: YES
+[
+ URL: https://en.wikipedia.org/wiki/Ryuk_(Death_Note)
+ Title: Ryuk (Death Note) - Wikipedia, the free encyclopedia
+ Summary: Ryuk (Japanese: ????, Hepburn: Ry?ku?) is a fictional character in the manga series Death Note, created by Tsugumi Ohba and Takeshi Obata.
+]
+
+
+Result 3
+Relevant: YES
+[
+ URL: https://en.wikipedia.org/wiki/Shinigami_(Death_Note)
+ Title: Shinigami (Death Note) - Wikipedia, the free encyclopedia
+ Summary: Ryuk (????, Ry?ku?) is the main Shinigami of the Death Note series. He is 6'6" according to Death Note volume 1. Bored with the activities (or lack thereof ...
+]
+
+
+Result 4
+Relevant: YES
+[
+ URL: http://www.urbandictionary.com/define.php?term=Ryuk
+ Title: Urban Dictionary: Ryuk
+ Summary: Ryuk is a Shinigami in the series, Death Note. He has these, like, freaky-ass yellow eyes with red irises. His mouth is huge, so it looks like he's always smiling.
+]
+
+
+Result 5
+Relevant: NO
+[
+ URL: http://www.ebay.com/sch/i.html?_nkw=ryuk
+ Title: ryuk | eBay
+ Summary: Find great deals on eBay for ryuk ryuk cosplay. Shop with confidence.
+]
+
+
+Result 6
+Relevant: YES
+[
+ URL: http://www.youtube.com/watch?v=GpKKsexX1_o
+ Title: Ryuk - Death Note - Shinigami - Makeup Tutorial! - YouTube
+ Summary: HD Makeup Tutorial for Ryuk from the anime series: Death Note! ?Official PinkStylist Merchandise! http://www.charlie-short.com
+]
+
+
+Result 7
+Relevant: YES
+[
+ URL: http://villains.wikia.com/wiki/Ryuk
+ Title: Ryuk - Villains Wiki - Wikia
+ Summary: Ryuk. Ryuk is a shinigami and the deuteragonist in Death Note. He was the one who gave Light Yagami the Death Note and was arguably the real villain of the series.
+]
+
+
+Result 8
+Relevant: YES
+[
+ URL: http://deathnote.wikia.com/wiki/Shinigami
+ Title: Shinigami - Death Note Wiki - Wikia
+ Summary: As mentioned by Ryuk, the only reason why Shinigami even prolong their own lives by taking the lives of humans is because even Shinigami are afraid to die.
+]
+
+
+Result 9
+Relevant: YES
+[
+ URL: http://www.youtube.com/watch?v=PWB6Db1y2iw
+ Title: Death Note: Light meets Ryuk - English Dub HD. - YouTube
+ Summary: A HD, English Dub of the first time Light meets Ryuk
+]
+
+
+Result 10
+Relevant: NO
+[
+ URL: http://www.instructables.com/id/Ryuk-Costume/
+ Title: Ryuk Costume - All
+ Summary: Intro: Ryuk Costume (Since I tend to get asked about selling the Shinigami, Rem and Ryuk have been sold. But hey, you can make your own!) Everybody's favorite Shinigami.
+]
+
+PRECISION 0.8
+=====================================
+ROUND 2
+QUERY ryuk note death
+
+Result 1
+Relevant: YES
+[
+ URL: http://deathnote.wikia.com/wiki/Ryuk
+ Title: Ryuk - Death Note Wiki - Wikia
+ Summary: Ryuk (????, Ry?ku) is a Shinigami who indirectly gives Light Yagami a Death Note. Ryuk was bored with the activities (or lack thereof) of the Shinigami Realm.
+]
+
+
+Result 2
+Relevant: YES
+[
+ URL: https://en.wikipedia.org/wiki/Ryuk_(Death_Note)
+ Title: Ryuk (Death Note) - Wikipedia, the free encyclopedia
+ Summary: Ryuk (Japanese: ????, Hepburn: Ry?ku?) is a fictional character in the manga series Death Note, created by Tsugumi Ohba and Takeshi Obata.
+]
+
+
+Result 3
+Relevant: YES
+[
+ URL: https://en.wikipedia.org/wiki/Shinigami_(Death_Note)
+ Title: Shinigami (Death Note) - Wikipedia, the free encyclopedia
+ Summary: Ryuk (????, Ry?ku?) is the main Shinigami of the Death Note series. He is 6'6" according to Death Note volume 1. Bored with the activities (or lack thereof ...
+]
+
+
+Result 4
+Relevant: NO
+[
+ URL: http://www.ebay.com/sch/i.html?_nkw=ryuk
+ Title: ryuk | eBay
+ Summary: Find great deals on eBay for ryuk ryuk cosplay. Shop with confidence.
+]
+
+
+Result 5
+Relevant: NO
+[
+ URL: https://www.etsy.com/search?q=death+note+ryuk
+ Title: death note ryuk ? Etsy
+ Summary: Shop for death note ryuk on Etsy, the place to express your creativity through the buying and selling of handmade and vintage goods.
+]
+
+
+Result 6
+Relevant: NO
+[
+ URL: http://www.ebay.com/sch/i.html?_nkw=ryuk+cosplay
+ Title: ryuk cosplay | eBay
+ Summary: Find great deals on eBay for ryuk cosplay death note notebook. Shop with confidence.
+]
+
+
+Result 7
+Relevant: NO
+[
+ URL: https://www.etsy.com/search?q=ryuk
+ Title: ryuk ? Etsy
+ Summary: Shop for ryuk on Etsy, the place to express your creativity through the buying and selling of handmade and vintage goods.
+]
+
+
+Result 8
+Relevant: YES
+[
+ URL: http://villains.wikia.com/wiki/Ryuk
+ Title: Ryuk - Villains Wiki - Wikia
+ Summary: Ryuk. Ryuk is a shinigami and the deuteragonist in Death Note. He was the one who gave Light Yagami the Death Note and was arguably the real villain of the series.
+]
+
+
+Result 9
+Relevant: NO
+[
+ URL: https://www.amazon.com/Death-Note-Shinigami-Statue-Figures/dp/B000NO1TG2
+ Title: Amazon.com: Death Note: Ryuk Shinigami 20" Statue (Figures ...
+ Summary: Death Note: Season 1 Ryuk Action Figure by Jun Planning 4.4 out of 5 stars 18. Death Note Selection Trading Figures Blind Box (One Random figure)
+]
+
+
+Result 10
+Relevant: YES
+[
+ URL: http://deathnote.wikia.com/wiki/Shinigami
+ Title: Shinigami - Death Note Wiki - Wikia
+ Summary: Shinigami (??, shinigami), sometimes referred to by their literal translation, "god(s) of death" or Grim Reapers, are a race of extra-dimensional beings who ...
+]
+
+PRECISION 0.5
+=====================================
+ROUND 3
+QUERY ryuk note death shinigami ku
+
+Result 1
+Relevant: YES
+[
+ URL: https://www.fanfiction.net/s/8182249/1/Death-Note-Rebirth
+ Title: Death Note: Rebirth Chapter 1, a death note fanfic ...
+ Summary: "This is the Shinigami Realm," answered the Shinigami, Ryuk. ... That is the atonement for anyone who uses the Death Note." The Death God ... "Ku ku ku," Ryuk ...
+]
+
+
+Result 2
+Relevant: YES
+[
+ URL: https://answers.yahoo.com/question/index?qid=20090106131222AAFROLT
+ Title: In Death Note, Ryuk (Lights Shinigami) says KuKu or Ku a ...
+ Summary: In Death Note, Ryuk (Lights Shinigami) says KuKu or Ku a lot. ... http://www.onemanga.com/Death_Note/86/10/ go there and thanks ... Ryuk's voice is deep ...
+]
+
+
+Result 3
+Relevant: YES
+[
+ URL: http://www.deathnotenews.com/news/category/ryuk
+ Title: Category: Ryuk - Death Note News - News about Death Note
+ Summary: Death Note 2016: Shinigami Ryuk Gets a Scary Facelift, ... It seems that a gentleman in Kita-Ku, ... in conversation with Death Note News.
+]
+
+
+Result 4
+Relevant: YES
+[
+ URL: https://www.fanfiction.net/s/8404665/1/Derita-Ryuk
+ Title: Derita Ryuk, a death note fanfic | FanFiction
+ Summary: ... klo death note punya gw, ... nama gue Ryuk . ... biru itu tulip , kuning adalah rambutmu , hitam adalah shinigami jelek di sebelah ku !
+]
+
+
+Result 5
+Relevant: NO
+[
+ URL: http://www.ebay.com/sch/i.html?_nkw=death+note+light
+ Title: death note light | eBay
+ Summary: Find great deals on eBay for death note light death note light figure. ... Death Note Yagami Light Shinigami Killer ... Light & Ryuk Death Note Anime Dictionary Art ...
+]
+
+
+Result 6
+Relevant: YES
+[
+ URL: http://shinigami--ryuk.deviantart.com/
+ Title: Shinigami--Ryuk (Ryuk) - DeviantArt
+ Summary: Shinigami--Ryuk. View Badges! ... He succeeds in tricking the Shinigami King out of a second Death Note. ... Ku ku ku.. How amusing! ((yup!
+]
+
+
+Result 7
+Relevant: YES
+[
+ URL: http://deathnote.wikia.com/wiki/Misa_Amane
+ Title: Misa Amane - Death Note Wiki - Wikia
+ Summary: Misa Amane (? ??, Amane ... Ryuk; L; Misa Amane; Rem; Near; Mello; Kira. Light Yagami; ... turning to dust and leaving behind only his Death Note. Another ...
+]
+
+
+Result 8
+Relevant: YES
+[
+ URL: https://en.wikipedia.org/wiki/Death_Note
+ Title: Death Note - Wikipedia, the free encyclopedia
+ Summary: Death Note - Wikipedia, the free encyclopedia ... Death Note ...
+]
+
+
+Result 9
+Relevant: YES
+[
+ URL: https://su.wikipedia.org/wiki/Death_note
+ Title: Death note - Wikip?dia
+ Summary: Death note nya ?ta judul manga Jepang anu ditulis ku Tsugumi Ohba tur digambar ku Takeshi ... Hiji po? man?hna manggih buku anu ngahaja dilabuhkeun ku shinigami Ryuk.
+]
+
+
+Result 10
+Relevant: NO
+[
+ URL: http://www.deathnotenews.com/news/archives/08-2015
+ Title: News about Death Note - Death Note News
+ Summary: Police Hunt Death Note Shinigami Flasher ... - Ryuk, Death Note Anime, Episode 1. ... in conversation with Death Note News.
+]
+
+PRECISION 0.8
