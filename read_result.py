@@ -9,21 +9,50 @@ import operator
 import string
 import urllib2
 def word_count(string):
-        #Here is a commit
-        my_string = string.lower().split()
-        my_dict = {}
-        for item in my_string:
-            if item in my_dict:
-                my_dict[item] += 1
-            else:
-                my_dict[item] = 1
-        f1=open('stop.txt','r')
+	my_string = string.lower().split()
+	my_dict = {}
+	for item in my_string:
+		if item in my_dict:
+			my_dict[item] += 1
+		else:
+			my_dict[item] = 1
+	f1=open('stop.txt','r')
 	stopFile=f1.read()
 	for word in stopFile.split():
 		if  word in my_dict:
 			del my_dict[word]
 	sorted_dict = sorted(my_dict.items(), key=operator.itemgetter(1))
 	print(sorted_dict)
+def minDist(lis,pos):
+	return max([1.0/abs(pos-x) for x in lis])
+def wordPositionWeights(sentence,reference):
+	sentence = sentence.lower()
+	distMap={}
+	referencePos = []
+	count=0
+	f1=open('stop.txt','r')
+	stopFile=f1.read()
+	table = string.maketrans("","")
+	sentence=sentence.translate(table, string.punctuation)
+	for word in sentence.split():
+		count+=1
+		if(word==reference):
+			referencePos.append(count)
+			pos = 0
+	for word in sentence.split():
+		pos+=1
+		if(word==reference):
+			continue
+		if(word in distMap.keys() and distMap[word]>minDist(referencePos,pos)):
+			distMap[word] = minDist(referencePos,pos)
+		elif not( word in distMap.keys()):
+			distMap[word] = minDist(referencePos,pos)
+	for word in distMap.keys():
+		if word in stopFile.split():
+			del distMap[word]
+	return distMap
+#print wordPositionWeights(" Milky - definition of milky by The Free Dictionary","milky")
+
 f = open('parseData','r')
 json_string =f.read()
 my_map = json.loads(json_string)
@@ -38,6 +67,7 @@ for result in results:
 	print "Title: " + result['Title'].encode('utf-8')
 	print "Description: " + result['Description'].encode('utf-8')
 	print "Please give your feeedback[y|n]"
+	print wordPositionWeights(result['Title'].encode('utf-8'),'milky')
 	my_inp = raw_input()
 	url=result['Url']
 	#url='http://en.wikipedia.org/wiki/Milky_Way'
@@ -71,3 +101,4 @@ for result in results:
 		irrelevant.append(result)
 #print relevant
 #print my_map['d']['results'][0]
+
