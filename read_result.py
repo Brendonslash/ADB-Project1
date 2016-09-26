@@ -9,6 +9,7 @@ import operator
 import string
 import urllib2
 def word_count(string):
+        #Here is a commit
         my_string = string.lower().split()
         my_dict = {}
         for item in my_string:
@@ -23,7 +24,6 @@ def word_count(string):
 			del my_dict[word]
 	sorted_dict = sorted(my_dict.items(), key=operator.itemgetter(1))
 	print(sorted_dict)
-
 f = open('parseData','r')
 json_string =f.read()
 my_map = json.loads(json_string)
@@ -34,7 +34,7 @@ cleaner = Cleaner()
 cleaner.javascript = True
 cleaner.style = True
 for result in results:
-	print "URL: " + result['Url'].encode('utf-8') 
+	print "URL: " + result['Url'].encode('utf-8')
 	print "Title: " + result['Title'].encode('utf-8')
 	print "Description: " + result['Description'].encode('utf-8')
 	print "Please give your feeedback[y|n]"
@@ -71,4 +71,3 @@ for result in results:
 		irrelevant.append(result)
 #print relevant
 #print my_map['d']['results'][0]
-
