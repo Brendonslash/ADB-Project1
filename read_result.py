@@ -67,7 +67,7 @@ def get_from_docs(relevant):
 	for result in relevant:
 		tf_dict={}
 		url=result['Url']
-		im=raw_input()
+		#im=raw_input()
 		#print result['Url']
 		#page = requests.get(url)
 		#htmlSource = page.text
@@ -77,11 +77,11 @@ def get_from_docs(relevant):
 		filename = wget.download(url)
 		htmlSource = open(filename,'r').read()
 		os.remove(filename)
-		print htmlSource
+		#print htmlSource
 		soup=BeautifulSoup(htmlSource,'html5lib')
 		for script in soup(["script", "style"]):
 	    		script.extract()
-		paras=soup.find_all(['p','title','b','i'])
+		paras=soup.find_all(['p','title','b','i','h1','h2','h3','h4','h5','h6'])
 		text=''
 		for i in xrange(0,len(paras)):
 			text=text + paras[i].get_text().encode('utf-8')
@@ -94,17 +94,17 @@ def get_from_docs(relevant):
 		tf_dict=word_count(text)
 		#print text
 		#print tf_dict
-		inp = raw_input()
+		#inp = raw_input()
 		if 'way' in tf_dict.keys():
 			print tf_dict['way']
 		tf_list.append(tf_dict)
-		title_text=result['Title']
-		title_text=title_text.decode('unicode_escape').encode('ascii','ignore')
+		#title_text=result['Title']
+		#title_text=title_text.decode('unicode_escape').encode('ascii','ignore')
 		#print "Title Count:"
-		title_tf_dict=word_count(title_text)
+		#title_tf_dict=word_count(title_text)
 	return tf_list
 
-f = open('parseData','r')
+f = open('parseData5','r')
 json_string =f.read()
 my_map = json.loads(json_string)
 results = my_map['d']['results']
@@ -119,7 +119,7 @@ for result in results:
 	print "Title: " + result['Title'].encode('utf-8')
 	print "Description: " + result['Description'].encode('utf-8')
 	print "Please give your feeedback[y|n]"
-	print wordPositionWeights(result['Title'].encode('utf-8'),'milky')
+	#print wordPositionWeights(result['Title'].encode('utf-8'),'musk')
 	my_inp = raw_input()
 	#print tf_dict
 	while(my_inp!='y' and my_inp!='n'):
