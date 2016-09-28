@@ -2,6 +2,7 @@ import urllib2
 import base64
 #print "Enter your Web Query Human: "
 inp = raw_input()
+#To handle spaces in the query
 inp = inp.replace(" ","%20")
 #rint inp
 bingUrl = 'https://api.datamarket.azure.com/Bing/Search/Web?Query=%27'+inp+'%27&$top=10&$format=json'
