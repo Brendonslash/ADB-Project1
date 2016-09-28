@@ -85,10 +85,12 @@ def get_from_docs(relevant):
 		text=''
 		for i in xrange(0,len(paras)):
 			text=text + paras[i].get_text().encode('utf-8')
+		#Handling unicode characters	
 		lines = (line.strip() for line in text.splitlines())
 		chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
 		text = '\n'.join(chunk for chunk in chunks if chunk)
 		text=text.decode('unicode_escape').encode('ascii','ignore')
+		#Removing punctuations
 		table = string.maketrans("","")
 		text=text.translate(table, string.punctuation)
 		tf_dict=word_count(text)
