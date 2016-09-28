@@ -1,18 +1,19 @@
 # _*_ coding:utf-8 _*_
 import json
 import urllib
+import urllib2
 from bs4 import BeautifulSoup
 import re
 import lxml
 from lxml.html.clean import Cleaner
 import operator
 import string
-import urllib2
 import requests
 import collections
-from selenium import webdriver
 import wget
 import os
+import httplib2
+from bing import execQuery
 #gives frequency
 def word_count(string):
 	my_string = string.lower().split()
@@ -29,9 +30,11 @@ def word_count(string):
 			del my_dict[word]
 	sorted_dict = collections.OrderedDict(sorted(my_dict.items(), key=operator.itemgetter(1)))
 	return sorted_dict
+	
 #gives minimum position from word
 def minDist(lis,pos):
 	return max([1.0/abs(pos-x) for x in lis])
+	
 #gives proximity for all words
 def wordPositionWeights(sentence,reference):
 	sentence = sentence.lower()
@@ -59,14 +62,19 @@ def wordPositionWeights(sentence,reference):
 		if word in stopFile.split():
 			del distMap[word]
 	return distMap
+    
 #print wordPositionWeights(" Milky - definition of milky by The Free Dictionary","milky")
 def get_from_docs(relevant):
 	tf_list=[]
-	print relevant
-	print len(relevant)
+	#print relevant
+	#print len(relevant)
 	for result in relevant:
 		tf_dict={}
 		url=result['Url']
+# 		print url
+# 		url=getContentLocation(url)
+# 		print "Redirected:",
+# 		print url
 		#im=raw_input()
 		#print result['Url']
 		#page = requests.get(url)
@@ -78,7 +86,7 @@ def get_from_docs(relevant):
 		htmlSource = open(filename,'r').read()
 		os.remove(filename)
 		#print htmlSource
-		soup=BeautifulSoup(htmlSource,'html5lib')
+		soup=BeautifulSoup(htmlSource,'html.parser')
 		for script in soup(["script", "style"]):
 	    		script.extract()
 		paras=soup.find_all(['p','title','b','i','h1','h2','h3','h4','h5','h6'])
@@ -97,8 +105,8 @@ def get_from_docs(relevant):
 		#print text
 		#print tf_dict
 		#inp = raw_input()
-		if 'way' in tf_dict.keys():
-			print tf_dict['way']
+		# if 'way' in tf_dict.keys():
+# 			print tf_dict['way']
 		tf_list.append(tf_dict)
 		#Take words from title
 		#title_text=result['Title']
@@ -107,58 +115,76 @@ def get_from_docs(relevant):
 		#title_tf_dict=word_count(title_text)
 	return tf_list
 
-f = open('parseData5','r')
-json_string =f.read()
-my_map = json.loads(json_string)
-results = my_map['d']['results']
-relevant = []
-irrelevant = []
-cleaner = Cleaner()
-cleaner.javascript = True
-cleaner.style = True
+flag=True
+print "Input Query:"
+my_query=raw_input()
+print "Input required precision between 0 and 1:"
+precision_threshold=float(raw_input())
+while(flag):	
+	json_string=execQuery(my_query)
+	# f = open('parseData5','r')
+	# json_string =f.read()
+	my_map = json.loads(json_string)
+	results = my_map['d']['results']
+	relevant = []
+	irrelevant = []
+	precision=0
 
-for result in results:
-	print "URL: " + result['Url'].encode('utf-8')
-	print "Title: " + result['Title'].encode('utf-8')
-	print "Description: " + result['Description'].encode('utf-8')
-	print "Please give your feeedback[y|n]"
-	#print wordPositionWeights(result['Title'].encode('utf-8'),'musk')
-	my_inp = raw_input()
-	#print tf_dict
-	while(my_inp!='y' and my_inp!='n'):
-		print "Human please enter valid feedback"
+	for result in results:
+		print "URL: " + result['Url'].encode('utf-8')
+		print "Title: " + result['Title'].encode('utf-8')
+		print "Description: " + result['Description'].encode('utf-8')
+		print "Please give your feeedback[y|n]"
+		#print wordPositionWeights(result['Title'].encode('utf-8'),'musk')
 		my_inp = raw_input()
-	if my_inp.lower()=='y':
-		relevant.append(result)
-	elif my_inp.lower()=='n':
-		irrelevant.append(result)
-tf_list = get_from_docs(relevant)
-#sprint tf_list
-scores=[]
-#print tf_list
-all_keys = []
-for doc in tf_list:
-	all_keys+=doc.keys()
-#print all_keys
-idf_scores = dict.fromkeys(list(set(all_keys)))
-for key in all_keys:
-	idf_scores[key]=0
-
-for doc in tf_list:
+		#print tf_dict
+		while(my_inp!='y' and my_inp!='n'):
+			print "Human please enter valid feedback"
+			my_inp = raw_input()
+		if my_inp.lower()=='y':
+			precision+=1
+			relevant.append(result)
+		elif my_inp.lower()=='n':
+			irrelevant.append(result)
+	tf_list = get_from_docs(relevant)
+	#sprint tf_list
+	scores=[]
+	#print tf_list
+	all_keys = []
+	for doc in tf_list:
+		all_keys+=doc.keys()
+	#print all_keys
+	idf_scores = dict.fromkeys(list(set(all_keys)))
 	for key in all_keys:
-		if(key in doc.keys()):
-			idf_scores[key]+=doc[key]
-# for doc in xrange(len(tf_list)):
-# 	for key in tf_list[doc]:
-# 		for d in xrange(len(tf_list)):
-# 			if key in tf_list[d]:
-# 				if not (key in idf_scores):idf_scores[key]=0
-# 				idf_scores[key]=idf_scores[key]+tf_list[d][key]
-# 			else:
-# 				if not (key in idf_scores):idf_scores[key]=0
-# 				idf_scores[key]=tf_list[doc][key]
+		idf_scores[key]=0
+	
+	for doc in tf_list:
+		for key in all_keys:
+			if(key in doc.keys()):
+				idf_scores[key]+=doc[key]
+	# for doc in xrange(len(tf_list)):
+	# 	for key in tf_list[doc]:
+	# 		for d in xrange(len(tf_list)):
+	# 			if key in tf_list[d]:
+	# 				if not (key in idf_scores):idf_scores[key]=0
+	# 				idf_scores[key]=idf_scores[key]+tf_list[d][key]
+	# 			else:
+	# 				if not (key in idf_scores):idf_scores[key]=0
+	# 				idf_scores[key]=tf_list[doc][key]
 
-idf_scores=collections.OrderedDict(sorted(idf_scores.items(), key=operator.itemgetter(1)))
-print idf_scores
-#print relevant
-#print my_map['d']['results'][0]
+	idf_scores=collections.OrderedDict(sorted(idf_scores.items(), key=operator.itemgetter(1)))
+	append1=idf_scores.items()[len(idf_scores)-1][0]
+	append2=idf_scores.items()[len(idf_scores)-2][0]
+	print append1, append2
+	my_query = my_query + " "+ append1 + " " + append2
+	#print idf_scores
+	print "New Query is:",
+	print my_query
+	precision=precision*1.0/10
+	print precision
+	if precision > precision_threshold: flag=False
+	#TODO: remove hardcoded 0.8
+
+
+	#print relevant
+	#print my_map['d']['results'][0]
