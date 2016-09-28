@@ -14,11 +14,14 @@ import wget
 import os
 import httplib2
 from bing import execQuery
+from nltk.stem.wordnet import WordNetLemmatizer
 #gives frequency
 def word_count(string):
+	lemtzr = WordNetLemmatizer()
 	my_string = string.lower().split()
 	my_dict = {}
 	for item in my_string:
+		item = lemtzr.lemmatize(str(item))
 		if item in my_dict:
 			my_dict[item] += 1
 		else:
@@ -26,6 +29,9 @@ def word_count(string):
 	f1=open('stop.txt','r')
 	stopFile=f1.read()
 	for word in stopFile.split():
+		if  word in my_dict:
+			del my_dict[word]
+	for word in my_query.split():
 		if  word in my_dict:
 			del my_dict[word]
 	sorted_dict = collections.OrderedDict(sorted(my_dict.items(), key=operator.itemgetter(1)))
@@ -117,7 +123,7 @@ def get_from_docs(relevant):
 
 flag=True
 print "Input Query:"
-my_query=raw_input()
+my_query=raw_input().lower()
 print "Input required precision between 0 and 1:"
 precision_threshold=float(raw_input())
 while(flag):	
@@ -173,8 +179,22 @@ while(flag):
 	# 				idf_scores[key]=tf_list[doc][key]
 
 	idf_scores=collections.OrderedDict(sorted(idf_scores.items(), key=operator.itemgetter(1)))
-	append1=idf_scores.items()[len(idf_scores)-1][0]
-	append2=idf_scores.items()[len(idf_scores)-2][0]
+	title_string=result['Title']
+	i=1
+	while(i<len(idf_scores)):
+		append1=idf_scores.items()[len(idf_scores)-i][0]
+		i+=1
+		if not(append1.isdigit()) or (append1 in title_string):
+			break
+		
+	while(i<len(idf_scores)):
+		append2=idf_scores.items()[len(idf_scores)-i-1][0]
+		i+=1
+		if not(append2.isdigit()) or (append1 in title_string):
+			break
+				
+			
+			
 	print append1, append2
 	my_query = my_query + " "+ append1 + " " + append2
 	#print idf_scores
@@ -182,7 +202,7 @@ while(flag):
 	print my_query
 	precision=precision*1.0/10
 	print precision
-	if precision > precision_threshold: flag=False
+	if precision >= precision_threshold: flag=False
 	#TODO: remove hardcoded 0.8
 
 
