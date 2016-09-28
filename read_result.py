@@ -100,6 +100,7 @@ def get_from_docs(relevant):
 		if 'way' in tf_dict.keys():
 			print tf_dict['way']
 		tf_list.append(tf_dict)
+		#Take words from title
 		#title_text=result['Title']
 		#title_text=title_text.decode('unicode_escape').encode('ascii','ignore')
 		#print "Title Count:"
