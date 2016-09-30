@@ -15,6 +15,7 @@ import os
 import httplib2
 from bing import execQuery
 from nltk.stem.wordnet import WordNetLemmatizer
+
 #gives frequency
 def word_count(string):
 	lemtzr = WordNetLemmatizer()
@@ -160,44 +161,89 @@ while(flag):
 	for doc in tf_list:
 		all_keys+=doc.keys()
 	#print all_keys
-	idf_scores = dict.fromkeys(list(set(all_keys)))
+	term_frequency = dict.fromkeys(list(set(all_keys)))
 	for key in all_keys:
-		idf_scores[key]=0
+		term_frequency[key]=0
 	
 	for doc in tf_list:
 		for key in all_keys:
 			if(key in doc.keys()):
-				idf_scores[key]+=doc[key]
+				term_frequency[key]+=doc[key]
 	# for doc in xrange(len(tf_list)):
 	# 	for key in tf_list[doc]:
 	# 		for d in xrange(len(tf_list)):
 	# 			if key in tf_list[d]:
-	# 				if not (key in idf_scores):idf_scores[key]=0
-	# 				idf_scores[key]=idf_scores[key]+tf_list[d][key]
+	# 				if not (key in term_frequency):term_frequency[key]=0
+	# 				term_frequency[key]=term_frequency[key]+tf_list[d][key]
 	# 			else:
-	# 				if not (key in idf_scores):idf_scores[key]=0
-	# 				idf_scores[key]=tf_list[doc][key]
+	# 				if not (key in term_frequency):term_frequency[key]=0
+	# 				term_frequency[key]=tf_list[doc][key]
 
-	idf_scores=collections.OrderedDict(sorted(idf_scores.items(), key=operator.itemgetter(1)))
-	title_string=result['Title']
+	term_frequency=collections.OrderedDict(sorted(term_frequency.items(), key=operator.itemgetter(1)))
+	title_string=''
+	desc_string=''
+	for result in relevant:
+		title_string+=result['Title']
+		desc_string+=result['Description']
+	
+	max=0
+	title_word=''	
+	#print title_string.encode('utf-8') + desc_string.encode('utf-8')
+	for word in title_string.encode('utf-8').split() + desc_string.encode('utf-8').split():
+		if word in term_frequency.keys() and not(word.isdigit()) and term_frequency[word] > max:
+			#print word
+			max = term_frequency[word]
+			title_word=word
+
+	td_terms_list=[]
+	title_append1=''
+	title_append2=''
+	#print term_frequency.items()[len(term_frequency)-1][1]
+	if term_frequency.items()[len(term_frequency)-1][1] < 7:
+		table = string.maketrans("","")
+		#print title_word
+		
+		td_lines=(title_string.encode('utf-8') + " " + desc_string.encode('utf-8')).lower()
+		print td_lines
+		td_lines=td_lines.translate(table, string.punctuation)
+	
+		td_words=td_lines.split()
+		#print td_words
+		f3=open('stop.txt','r')
+		stopFile=f3.read()
+		td_words = list(filter(lambda x: x not in stopFile.split(),td_words))
+		for word in td_words:
+			if not(word.isdigit()):
+				td_terms_list.append(word)
+		td_string=' '.join(td_terms_list)
+		td_word_frequency=word_count(td_string)
+		print td_word_frequency
+		title_append1=td_word_frequency.items()[len(td_word_frequency)-1][0]
+		title_append2=td_word_frequency.items()[len(td_word_frequency)-2][0]
+		
+	#print td_terms_list
+	#print title_append1
 	i=1
-	while(i<len(idf_scores)):
-		append1=idf_scores.items()[len(idf_scores)-i][0]
+	while(i<len(term_frequency)):
+		append1=term_frequency.items()[len(term_frequency)-i][0]
 		i+=1
-		if not(append1.isdigit()) or (append1 in title_string):
+		if not(append1.isdigit()) and (append1 != title_word) and (append1 not in my_query):
 			break
 		
-	while(i<len(idf_scores)):
-		append2=idf_scores.items()[len(idf_scores)-i-1][0]
+	while(i<len(term_frequency)):
+		append2=term_frequency.items()[len(term_frequency)-i-1][0]
 		i+=1
-		if not(append2.isdigit()) or (append1 in title_string):
+		if not(append2.isdigit()) and (append2 != title_word) and (append2 not in my_query):
 			break
 				
 			
 			
-	print append1, append2
-	my_query = my_query + " "+ append1 + " " + append2
-	#print idf_scores
+	#print append1, append2
+	if term_frequency.items()[len(term_frequency)-1][1] >= 10:
+		my_query = my_query + " "+ append1 + " " + append2 #+ " " + title_word
+	if term_frequency.items()[len(term_frequency)-1][1] < 10:
+		my_query=my_query + " " + title_append1 + " " + title_append2
+	#print term_frequency
 	print "New Query is:",
 	print my_query
 	precision=precision*1.0/10

@@ -314,6 +314,7 @@ like
 likely
 lk
 ll
+loading
 lr
 ls
 lt
