@@ -212,6 +212,7 @@ gu
 gw
 gy
 h
+ha
 had
 has
 hasn
@@ -592,6 +593,7 @@ via
 vn
 vu
 w
+wa
 was
 wasn
 wasn't
