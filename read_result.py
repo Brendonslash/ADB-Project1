@@ -199,28 +199,32 @@ while(flag):
 	title_append1=''
 	title_append2=''
 	#print term_frequency.items()[len(term_frequency)-1][1]
-	if term_frequency.items()[len(term_frequency)-1][1] < 7:
-		table = string.maketrans("","")
+	if(len(term_frequency)!=0):
+		if term_frequency.items()[len(term_frequency)-1][1] < 7:
+			table = string.maketrans("","")
 		#print title_word
 		
-		td_lines=(title_string.encode('utf-8') + " " + desc_string.encode('utf-8')).lower()
-		print td_lines
-		td_lines=td_lines.translate(table, string.punctuation)
+			td_lines=(title_string.encode('utf-8') + " " + desc_string.encode('utf-8')).lower()
+			print td_lines
+			td_lines=td_lines.translate(table, string.punctuation)
 	
-		td_words=td_lines.split()
-		#print td_words
-		f3=open('stop.txt','r')
-		stopFile=f3.read()
-		td_words = list(filter(lambda x: x not in stopFile.split(),td_words))
-		for word in td_words:
-			if not(word.isdigit()):
-				td_terms_list.append(word)
-		td_string=' '.join(td_terms_list)
-		td_word_frequency=word_count(td_string)
-		print td_word_frequency
-		title_append1=td_word_frequency.items()[len(td_word_frequency)-1][0]
-		title_append2=td_word_frequency.items()[len(td_word_frequency)-2][0]
-		
+			td_words=td_lines.split()
+			#print td_words
+			f3=open('stop.txt','r')
+			stopFile=f3.read()
+			td_words = list(filter(lambda x: x not in stopFile.split(),td_words))
+			for word in td_words:
+				if not(word.isdigit()):
+					td_terms_list.append(word)
+			td_string=' '.join(td_terms_list)
+			td_word_frequency=word_count(td_string)
+			print td_word_frequency
+			title_append1=td_word_frequency.items()[len(td_word_frequency)-1][0]
+			title_append2=td_word_frequency.items()[len(td_word_frequency)-2][0]
+	
+	else: 
+		print "No Results Returned by Bing!"
+		break	
 	#print td_terms_list
 	#print title_append1
 	i=1
@@ -239,18 +243,29 @@ while(flag):
 			
 			
 	#print append1, append2
-	if term_frequency.items()[len(term_frequency)-1][1] >= 10:
-		my_query = my_query + " "+ append1 + " " + append2 #+ " " + title_word
-	if term_frequency.items()[len(term_frequency)-1][1] < 10:
-		my_query=my_query + " " + title_append1 + " " + title_append2
+	if(len(term_frequency)!=0):
+		if term_frequency.items()[len(term_frequency)-1][1] >= 10:
+			my_query = my_query + " "+ append1 + " " + append2 #+ " " + title_word
+		if term_frequency.items()[len(term_frequency)-1][1] < 10:
+			my_query=my_query + " " + title_append1 + " " + title_append2
+	
+	else:
+		print "No results returned"
+		break
+	
 	#print term_frequency
 	print "New Query is:",
 	print my_query
 	precision=precision*1.0/10
 	print precision
 	if precision >= precision_threshold: flag=False
-	#TODO: remove hardcoded 0.8
-
-
 	#print relevant
 	#print my_map['d']['results'][0]
+	
+	#TODO: Catch errors, terminate on 0, clean code, refactor, testing
+	#TODO: take from title only in second iteration
+	#TODO: order is important
+	#TODO: Sergey Brin
+	#TODO: Noun with capital letter in first iteration
+
+
