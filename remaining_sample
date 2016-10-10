@@ -1,0 +1,31 @@
+#gives minimum position from word
+def minDist(lis,pos):
+	return max([1.0/abs(pos-x) for x in lis])
+	
+#gives proximity for all words
+def wordPositionWeights(sentence,reference):
+	sentence = sentence.lower()
+	distMap={}
+	referencePos = []
+	count=0
+	f1=open('stop.txt','r')
+	stopFile=f1.read()
+	table = string.maketrans("","")
+	sentence=sentence.translate(table, string.punctuation)
+	for word in sentence.split():
+		count+=1
+		if(word==reference):
+			referencePos.append(count)
+			pos = 0
+	for word in sentence.split():
+		pos+=1
+		if(word==reference):
+			continue
+		if(word in distMap.keys() and distMap[word]>minDist(referencePos,pos)):
+			distMap[word] = minDist(referencePos,pos)
+		elif not( word in distMap.keys()):
+			distMap[word] = minDist(referencePos,pos)
+	for word in distMap.keys():
+		if word in stopFile.split():
+			del distMap[word]
+	return distMap
